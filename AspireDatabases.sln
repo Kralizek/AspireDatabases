@@ -3,6 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0AEB1A1B-9D34-4B7E-8FD9-410AF8D24102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDbWeb", "src\CosmosDbWeb\CosmosDbWeb.csproj", "{633F0CA3-8041-4200-AE86-037801F38CC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsSqlWeb", "src\MsSqlWeb\MsSqlWeb.csproj", "{006F7F1B-1AC2-4BBE-8299-63DACC1899C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSqlWeb", "src\PostgreSqlWeb\PostgreSqlWeb.csproj", "{F492D560-6BA0-422E-BB68-26DF49E7A2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "src\ServiceDefaults\ServiceDefaults.csproj", "{5FFC337C-9041-4B0F-AA37-F44DAFCCEC7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F173ACA0-12AC-4DFD-AC0D-848745C62F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "tools\AppHost\AppHost.csproj", "{1E8E7F0F-D02A-431D-A682-CD77E2EA1574}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +24,34 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633F0CA3-8041-4200-AE86-037801F38CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633F0CA3-8041-4200-AE86-037801F38CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633F0CA3-8041-4200-AE86-037801F38CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633F0CA3-8041-4200-AE86-037801F38CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006F7F1B-1AC2-4BBE-8299-63DACC1899C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006F7F1B-1AC2-4BBE-8299-63DACC1899C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006F7F1B-1AC2-4BBE-8299-63DACC1899C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006F7F1B-1AC2-4BBE-8299-63DACC1899C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F492D560-6BA0-422E-BB68-26DF49E7A2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F492D560-6BA0-422E-BB68-26DF49E7A2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F492D560-6BA0-422E-BB68-26DF49E7A2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F492D560-6BA0-422E-BB68-26DF49E7A2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFC337C-9041-4B0F-AA37-F44DAFCCEC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFC337C-9041-4B0F-AA37-F44DAFCCEC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFC337C-9041-4B0F-AA37-F44DAFCCEC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFC337C-9041-4B0F-AA37-F44DAFCCEC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8E7F0F-D02A-431D-A682-CD77E2EA1574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8E7F0F-D02A-431D-A682-CD77E2EA1574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8E7F0F-D02A-431D-A682-CD77E2EA1574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8E7F0F-D02A-431D-A682-CD77E2EA1574}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{633F0CA3-8041-4200-AE86-037801F38CC7} = {0AEB1A1B-9D34-4B7E-8FD9-410AF8D24102}
+		{006F7F1B-1AC2-4BBE-8299-63DACC1899C3} = {0AEB1A1B-9D34-4B7E-8FD9-410AF8D24102}
+		{F492D560-6BA0-422E-BB68-26DF49E7A2C5} = {0AEB1A1B-9D34-4B7E-8FD9-410AF8D24102}
+		{5FFC337C-9041-4B0F-AA37-F44DAFCCEC7F} = {0AEB1A1B-9D34-4B7E-8FD9-410AF8D24102}
+		{1E8E7F0F-D02A-431D-A682-CD77E2EA1574} = {F173ACA0-12AC-4DFD-AC0D-848745C62F04}
 	EndGlobalSection
 EndGlobal
