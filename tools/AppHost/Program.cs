@@ -3,8 +3,12 @@ var builder = DistributedApplication.CreateBuilder(args);
 var password = builder.AddParameter("Password");
 
 var cosmos = builder.AddAzureCosmosDB("cosmos")
-                    .RunAsEmulator()
-                    .AddDatabase("cosmosdb");
+                    .AddDatabase("cosmosdb")
+                    .RunAsEmulator(emulator =>
+                    {
+                        emulator.WithVolume("aspire-tests-cosmosdb", "/tmp/cosmos/appdata")
+                                .WithEnvironment("AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE", "true");
+                    });
 
 builder.AddProject<Projects.CosmosDbWeb>("cosmosWeb")
        .WithReference(cosmos);
