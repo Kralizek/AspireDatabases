@@ -1,6 +1,6 @@
 @MsSqlWeb_HostAddress = http://localhost:5025
 
-GET {{MsSqlWeb_HostAddress}}/weatherforecast/
+GET {{MsSqlWeb_HostAddress}}/todos/
 Accept: application/json
 
 ###

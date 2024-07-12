@@ -1,6 +1,6 @@
 @CosmosDbWeb_HostAddress = http://localhost:5199
 
-GET {{CosmosDbWeb_HostAddress}}/weatherforecast/
+GET {{CosmosDbWeb_HostAddress}}/todos/
 Accept: application/json
 
 ###

@@ -1,6 +1,6 @@
 @PostgreSqlWeb_HostAddress = http://localhost:5185
 
-GET {{PostgreSqlWeb_HostAddress}}/weatherforecast/
+GET {{PostgreSqlWeb_HostAddress}}/todos/
 Accept: application/json
 
 ###

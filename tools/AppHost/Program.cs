@@ -10,13 +10,15 @@ builder.AddProject<Projects.CosmosDbWeb>("cosmosWeb")
        .WithReference(cosmos);
 
 var mssql = builder.AddSqlServer("mssql", password)
+                   .WithDataVolume("aspire-tests-mssql")
                    .AddDatabase("mssqldb");
 
 builder.AddProject<Projects.MsSqlWeb>("mssqlWeb")
        .WithReference(mssql);
 
-var npgsql = builder.AddPostgres("pg", password)
-                    .AddDatabase("pgDb");
+var npgsql = builder.AddPostgres("pg", password: password)
+                    .WithDataVolume("aspire-tests-pg")
+                    .AddDatabase("pgdb");
 
 builder.AddProject<Projects.PostgreSqlWeb>("pgWeb")
        .WithReference(npgsql);
